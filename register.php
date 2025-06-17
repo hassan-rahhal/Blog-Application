@@ -66,7 +66,9 @@ require 'components/checkIfLogin.php';
                             echo 'Password should be 8 characters minimum';
                         } else if($_GET['err'] == 4){
                             echo 'Email Address already in use';
-                        } 
+                        } else if($_GET['err'] == 5){
+                            echo 'Passwords do not match'; // ✅ Added error message
+                        }
                     }
                 ?>
                 </p>

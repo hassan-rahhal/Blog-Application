@@ -8,6 +8,7 @@ if($_SERVER['REQUEST_METHOD'] != "POST"){
 $name = htmlspecialchars(trim($_POST['username']));
 $email = htmlspecialchars(trim($_POST['email']));
 $password = $_POST['password'];
+$password_confirmation = $_POST['password_confirmation'];
 
 if((!isset($email) || empty($email) ||
     (!isset($password) || empty(trim($password))) ||
@@ -23,7 +24,10 @@ if(!filter_var($email, filter: FILTER_VALIDATE_EMAIL)){
     header("Location: ../register.php?err_email=2");
     exit();
 }
-
+if($password !== $password_confirmation){
+    header("Location: ../register.php?err=5");
+    exit();
+}
 if(strlen($password) < 8){
     header("Location: ../register.php?err=3");
         exit();
