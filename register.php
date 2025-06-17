@@ -7,7 +7,7 @@ require 'components/checkIfLogin.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign up Page</title>
+    <title>RAHHAL Blog Application</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-blog-template.css" rel="stylesheet">
 </head>
@@ -39,7 +39,7 @@ require 'components/checkIfLogin.php';
                         <input type="text" id="username" name="username"
                         value="<?php echo isset($_SESSION['register_name']) ? htmlspecialchars($_SESSION['register_name']) : ''; ?>" class="form-control" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" class="form-control" required>
