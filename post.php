@@ -52,7 +52,7 @@ $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
 
-    <title>Post - RAHHAL Blog Application</title>
+    <title>RAHHAL Blog Application</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 

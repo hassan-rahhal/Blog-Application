@@ -46,7 +46,7 @@ $isProfileOwner = $id == $_SESSION['userId'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
 
-    <title>Home - RAHHAL Blog Application</title>
+    <title>RAHHAL Blog Application</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 

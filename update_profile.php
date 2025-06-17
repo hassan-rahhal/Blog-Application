@@ -9,7 +9,7 @@ require 'components/checkIfNotLogin.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
 
-    <title>Home - RAHHAL Blog Template</title>
+    <title>RAHHAL Blog Template</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-blog-template.css" rel="stylesheet">
 </head>
