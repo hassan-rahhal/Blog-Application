@@ -83,7 +83,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 </a>
                                 <p><span class="glyphicon glyphicon-time"></span> Posted on '.$formattedDate.'</p>
                                 <p>'.$post['content'].'</p>
-                                <a class="btn btn-default" href="post.php?id='. $post['post_id'].'">Read More</a>';
+                                <a class="btn btn-default" href="post.php?id='. $post['post_id'].'">Read More / Add comment</a>';
                                 if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
                                     echo "<form method='POST' action='actions/like_action.php' style='display: inline; margin-left: 5px;'>";
                                     echo "<input type='hidden' name='post_id' value='". $post['post_id']."'>";
