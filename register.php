@@ -31,15 +31,15 @@ require 'components/checkIfLogin.php';
                     <div class="form-group">
                         <label for="username">Email</label>
                         <input type="email" id="email" name="email" class="form-control"
-                            value="<?php echo $_SESSION['register_email'];?>" required>
+                        value="<?php echo isset($_SESSION['register_email']) ? htmlspecialchars($_SESSION['register_email']) : ''; ?>" required>
                     </div>
 
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" id="username" name="username"
-                            value="<?php echo $_SESSION['register_name'];?>" class="form-control" required>
+                        value="<?php echo isset($_SESSION['register_name']) ? htmlspecialchars($_SESSION['register_name']) : ''; ?>" class="form-control" required>
                     </div>
-
+                    
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" class="form-control" required>
