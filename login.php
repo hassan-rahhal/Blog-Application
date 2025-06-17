@@ -8,41 +8,33 @@ require 'components/checkIfLogin.php';
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is demo page made for YouBee.ai's programming courses">
     <meta name="author" content="">
 
-    <title>Login - YouBee Blog Template</title>
+    <title>Login - RAHHAL Blog Application</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link href="css/simple-blog-template.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <?php 
         require_once 'components/nav.php';
     ?>
 
 
-    <!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
             <div class="col-lg-2"></div>
 
-            <!-- Login content  -->
             <div class="col-lg-8 login">
 
-                <!-- Title -->
                 <h1>Login</h1>
 
-                <!-- Login form -->
                 <form action="actions/login_action.php" method="post" class="login-form">
                     <div class="form-group">
                         <label for="username">Email</label>
@@ -72,26 +64,20 @@ require 'components/checkIfLogin.php';
                     }
                 ?>
                 </p>
-                <!-- /form -->
             </div>
 
             <div class="col-lg-2"></div>
 
         </div>
-        <!-- /.row -->
 
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
     <?php 
         include_once 'components/footer.php';
     ?>
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 

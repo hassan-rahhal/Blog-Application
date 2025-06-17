@@ -8,7 +8,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is demo page made for YouBee.ai's programming courses">
     <meta name="author" content="">
 
     <title>New post - YouBee Blog Template</title>

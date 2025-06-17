@@ -4,37 +4,24 @@ require 'components/checkIfNotLogin.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is demo page made for YouBee.ai's programming courses">
     <meta name="author" content="">
 
-    <title>Home - YouBee Blog Template</title>
-
-    <!-- Bootstrap Core CSS -->
+    <title>Home - RAHHAL Blog Template</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/simple-blog-template.css" rel="stylesheet">
-
-
 </head>
 
 <body>
-
-    <!-- Navigation -->
     <?php 
         require_once 'components/nav.php';
     ?>
 
-    <!-- Page Content -->
     <div class="container">
 
         <div class="row">
-            <!-- Page Title -->
             <div class="col-md-12">
 
                 <h2>
@@ -64,20 +51,15 @@ require 'components/checkIfNotLogin.php';
         </div>
 
     </div>
-    <!-- /.row -->
 
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
     <?php 
         require_once 'components/footer.php';
     ?>
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 
