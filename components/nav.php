@@ -41,6 +41,9 @@ if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
                             <a href="author.php?id='.$_SESSION['userId'].'">'. $_SESSION['username'].'</a>
                         </li>
                         <li>
+                            <a href="index.php">News Feed</a>
+                        </li>
+                        <li>
                             <a href="newpost.php">New Post</a>
                         </li>
                         <li>
