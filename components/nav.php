@@ -9,7 +9,6 @@ if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
 ?>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1">
@@ -18,15 +17,11 @@ if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">YouBee Blog</a>
+            <a class="navbar-brand" href="index.php">RAHHAL BLOG</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="about.html">About</a>
-                </li>
                 <?php 
                     if(!$loggedIn){
                         echo '
@@ -54,7 +49,5 @@ if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
 
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
