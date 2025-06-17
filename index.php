@@ -121,33 +121,23 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        function like(id){
-            const myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+        function like(id) {
+    fetch('actions/like_action.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `post_id=${encodeURIComponent(id)}`
+    })
+    .then(response => response.json())
+    .then(data => {
+        likeSuccess(data, id);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
 
-            const urlencoded = new URLSearchParams();
-            urlencoded.append("post_id", id);
-
-            const requestOptions = {
-                method: "POST",
-                headers: myHeaders,
-                body: urlencoded,
-                redirect: "follow"
-            };
-
-            fetch('actions/like_action.php', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ post_id: 123 })
-})
-.then(response => response.json())
-.then(data => {
-    console.log(data);
-});
-
-        }
 
         function likeSuccess(result, id){
             const num = document.getElementById("num" + id);
