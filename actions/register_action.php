@@ -10,6 +10,16 @@ $email = htmlspecialchars(trim($_POST['email']));
 $password = $_POST['password'];
 $password_confirmation = $_POST['password_confirmation'];
 
+$sql_check = "SELECT id FROM users WHERE email = :email";
+$stmt_check = $pdo->prepare($sql_check);
+$stmt_check->bindParam(":email", $email);
+$stmt_check->execute();
+
+if($stmt_check->rowCount() > 0){
+    header("Location: ../register.php?err=4");
+    exit();
+}
+
 if((!isset($email) || empty($email) ||
     (!isset($password) || empty(trim($password))) ||
     (!isset($name) || empty($name)))){
