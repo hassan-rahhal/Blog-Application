@@ -26,6 +26,9 @@ if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
                     if(!$loggedIn){
                         echo '
                         <li>
+                            <a href="index.php">News Feed</a>
+                        </li>
+                        <li>
                             <a href="login.php">Login</a>
                         </li>
                         <li>
