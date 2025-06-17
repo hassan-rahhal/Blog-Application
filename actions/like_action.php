@@ -10,7 +10,6 @@ if($_SERVER['REQUEST_METHOD'] != "POST"){
 $user_id = $_SESSION['userId'];
 $post_id = $_POST['post_id'];
 
-//Checks fo security 
 try {
     $sql = "SELECT * FROM likes WHERE user_id = :user_id AND post_id= :post_id";
     $stmt = $pdo->prepare($sql);

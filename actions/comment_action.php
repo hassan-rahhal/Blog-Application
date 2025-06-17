@@ -11,7 +11,6 @@ $post_id = $_POST['post_id'];
 $user_id = $_SESSION['userId'];
 $comment_id = empty($_POST['comment_id']) ? null : $_POST['comment_id'];
 
-//Check for post_id
 if(!isset($content) || empty(trim($content)) || !isset($post_id) || empty(trim($post_id))){
         die("Wrong parameters");
         exit();

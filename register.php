@@ -7,7 +7,7 @@ require 'components/checkIfLogin.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RAHHAL Blog Application</title>
+    <title>BitCast | Blog Website</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-blog-template.css" rel="stylesheet">
 </head>
@@ -67,7 +67,7 @@ require 'components/checkIfLogin.php';
                         } else if($_GET['err'] == 4){
                             echo 'Email Address already in use';
                         } else if($_GET['err'] == 5){
-                            echo 'Passwords do not match'; // ✅ Added error message
+                            echo 'Passwords do not match';
                         }
                     }
                 ?>

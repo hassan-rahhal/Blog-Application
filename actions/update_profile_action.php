@@ -10,31 +10,25 @@ $fileType = strtolower(pathinfo($_FILES['profile']['name'], flags: PATHINFO_EXTE
 $image_name = "IMG_" . $_SESSION['userId'] . "_" . bin2hex(random_bytes(10)) . "." . $fileType;
 $target = "../imgs/" . $image_name;
 
-//Check file extention
 if($fileType != "jpeg" && $fileType != "png" && $fileType != "jpg" && $fileType != "gif"){
     header("Location: ../update_profile.php?err=2");
     exit();
 }
 
-//check if file exists
 while(file_exists($target)){
     $image_name = "IMG_" . $_SESSION['userId'] . "_" . bin2hex(random_bytes(10)) . "." . $fileType;
     $target = "../imgs/" . $image_name;
 }
 
-//check file size
-if($_FILES['profile']['size'] > 100000){
+if($_FILES['profile']['size'] > 1000000){
     header("Location: ../update_profile.php?err=3");
     exit();
 }
 
-//Check if real image
 if(!getimagesize($_FILES['profile']['tmp_name'])){
     header("Location: ../update_profile.php?err=4");
     exit();
 }
-
-
 
 try{
     if(!move_uploaded_file($_FILES['profile']['tmp_name'], $target)){

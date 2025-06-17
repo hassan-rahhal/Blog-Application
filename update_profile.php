@@ -9,7 +9,7 @@ require 'components/checkIfNotLogin.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
 
-    <title>RAHHAL Blog Template</title>
+    <title>BitCast | Blog Website</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-blog-template.css" rel="stylesheet">
 </head>
@@ -61,9 +61,6 @@ require 'components/checkIfNotLogin.php';
     <script src="js/jquery.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
-
-
-
 
 </body>
 

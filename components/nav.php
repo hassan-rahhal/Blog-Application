@@ -17,7 +17,7 @@ if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">RAHHAL BLOG</a>
+            <a class="navbar-brand" href="index.php">BitCast</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

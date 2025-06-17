@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAHHAL Blog Application</title>
+    <title>BitCast | Blog Website</title>
 </head>
 <body>
     <h1>Admin Page</h1>
